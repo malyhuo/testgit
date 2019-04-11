@@ -21,4 +21,9 @@ cd $WORKSPACE/bin
 touch BUILD_DONE
 
 
+112
+if[]
+then
+exit
+
 

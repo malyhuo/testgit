@@ -22,8 +22,15 @@ touch BUILD_DONE
 
 
 112
-if[]
+
 then
 exit
+
+#增加一些修改，删除了昨天的一行代码
+412
+412
+
+
+
 
 

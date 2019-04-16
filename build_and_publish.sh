@@ -41,6 +41,18 @@ exit
 
 415 gogogo4
 
+then 416
+exit 416
 
-
+function checkError()
+{
+#416的if语句
+if [ $? != 0 ];
+then
+exit 1
+fi
+}
+export ANDROID_HOME=$ANDROID_SDK
+export JAVA_HOME=$JDK8
+export PATH=$JDK8/bin:$PATH
 

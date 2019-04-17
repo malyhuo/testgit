@@ -89,6 +89,22 @@ int 4.16 add
     for (uint32_t i = 0; i < level; ++i)
 	}
 	
-#include 
+//417 commit
 
-#include 	
+
+ for (uint32_t i = 0; i < level; ++i)
+    {
+        vecSize.push_back(GetLevelSize(n));
+        sum += vecSize.back();
+        uint32_t occupied = vecSize.back() * occupied_ratio;
+        if (n < occupied)
+        {
+            return -1;
+        }
+        n -= vecSize.back() * occupied_ratio;
+    }
+	
+	/*
+	417
+	417
+	*/

@@ -41,7 +41,12 @@ int  main()
 	return 0;
 }
 
-#4.16 new
-#4.16 new
-#include <iostream> 
-#include "spp_lambda_task.h"
+//16 new
+//416 new
+
+
+//417
+/* test 
+
+test*/
+int GetRpcB(int req, int rsp){ 

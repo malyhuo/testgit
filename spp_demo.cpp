@@ -50,3 +50,11 @@ int  main()
 
 test*/
 int GetRpcB(int req, int rsp){ 
+
+//419 Friday
+	LamTaskList m_list;
+	m_list += [&]() {  GetRpcA(++req, rsp); };  //调用A 服务 
+	m_list += [&]() {  GetRpcB(++req, rsp); };  //调用B 服务
+	m_list += [&]() {  GetRpcC(++req, rsp); };  //调用C 服务
+
+	m_list.mt_exec_all_task();  //这里并发调用 A/B/C 3个服务 

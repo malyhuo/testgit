@@ -56,3 +56,14 @@ export ANDROID_HOME=$ANDROID_SDK
 export JAVA_HOME=$JDK8
 export PATH=$JDK8/bin:$PATH
 
+#419 add note
+{
+#416的if语句
+if [ $? != 0 ];
+then
+exit 1
+fi
+}
+
+
+#419 add code , add note

@@ -67,3 +67,13 @@ fi
 
 
 #419 add code , add note
+
+#422 commit
+function checkError()
+{
+#如果前一条命令出错了则终止构建
+if [ $? != 0 ];
+then
+exit 1
+fi
+}

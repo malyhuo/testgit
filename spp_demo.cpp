@@ -74,5 +74,11 @@ modify 1
 	m_list += [&]() {  GetRpcB(++req, rsp); }; 
 	m_list += [&]() {  GetRpcC(++req, rsp); }; 
 
- 
-	
+//425
+//425
+//425
+int  main()
+{
+	bool init_ok = mt_init_frame();
+	if (!init_ok)
+}

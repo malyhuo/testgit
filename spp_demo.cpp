@@ -66,6 +66,13 @@ noboolalpha
 modify 1 
 
 	
-	
-	
+425 modify 1
+//调用C 服务1
+//调用C 服务2
+	LamTaskList m_list;
+	m_list += [&]() {  GetRpcA(++req, rsp); };  
+	m_list += [&]() {  GetRpcB(++req, rsp); }; 
+	m_list += [&]() {  GetRpcC(++req, rsp); }; 
+
+ 
 	
